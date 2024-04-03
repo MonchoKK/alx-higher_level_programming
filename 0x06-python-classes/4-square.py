@@ -10,9 +10,8 @@ class Square:
         """Initialize a new space.
 
         Args:
-            size (init): The size of the new square.
-         """
-         self.size = size
+            size (init): The size of the new square."""
+        self.size = size
 
     @property
     def size(self):
