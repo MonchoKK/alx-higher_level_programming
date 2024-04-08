@@ -1,12 +1,12 @@
 #!/usr/bin/python3
-"""Define a Rectangle class."""
+"""Defines a Rectangle class."""
 
 
 class Rectangle:
     """Represent a rectangle.
 
     Attributes:
-        number_of_instances (int): The number Rectangle instances."""
+        number_of_instances (int): The number of Rectangle instances."""
 
     number_of_instances = 0
 
@@ -69,7 +69,7 @@ class Rectangle:
             [rect.append('#') for j in range(self.__width)]
             if i != self.__height - 1:
                 rect.append("\n")
-            return ("".join(rect))
+        return ("".join(rect))
 
     def __repr__(self):
         """Return the string representation of the Rectangle."""
