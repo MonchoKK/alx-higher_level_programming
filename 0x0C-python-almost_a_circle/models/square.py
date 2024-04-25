@@ -40,7 +40,7 @@ class Square(Rectangle):
                     self.x = arg
                 elif count == 3:
                     self.y = arg
-                else continue
+                else: continue
 
         elif len(kwargs) > 0:
             for key, value in kwargs.items():
