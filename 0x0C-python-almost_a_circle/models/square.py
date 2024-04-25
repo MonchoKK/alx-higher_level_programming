@@ -40,7 +40,8 @@ class Square(Rectangle):
                     self.x = arg
                 elif count == 3:
                     self.y = arg
-                else: continue
+                else:
+		    continue
 
         elif len(kwargs) > 0:
             for key, value in kwargs.items():
@@ -52,8 +53,9 @@ class Square(Rectangle):
                     self.x = value
                 elif key == "y":
                     self.y = value
-                # removed the break statement, incase if the passed args are greater
-                # than 5, and one of the attributes is at the end
+
+# removed the break statement, incase if the passed args are greater
+# than 5, and one of the attributes is at the end
 
     def to_dictionary(self):
         """Return the dictionary representation of the Square."""
