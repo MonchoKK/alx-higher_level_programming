@@ -1,6 +1,6 @@
 #!/usr/bin/node
 
-/* searches for the biggest integer in the list of args, assuming that all args can be converted to integers */
+/* Searches for the second biggest integer in the list of args, assuming that all args can be converted to integers */
 if (process.argv.length <= 3) {
   console.log(0);
 } else {
@@ -8,5 +8,11 @@ if (process.argv.length <= 3) {
   for (let i = 2; i < process.argv.length; i++) {
     ints.push(parseInt(process.argv[i]));
   }
-  console.log(ints.sort()[1]);
+
+  // Sort the array in descending order
+  ints.sort((a, b) => b - a);
+
+  // Print the second element which is the second largest
+  console.log(ints[1]);
 }
+
