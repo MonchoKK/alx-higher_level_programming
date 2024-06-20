@@ -2,7 +2,7 @@
 
 /* searches for the biggest integer in the list of args, assuming that all args can be converted to integers */
 if (process.argv.length <= 3) {
-  console.log(1);
+  console.log(0);
 } else {
   const ints = [];
   const len = process.argv.length - 2;
