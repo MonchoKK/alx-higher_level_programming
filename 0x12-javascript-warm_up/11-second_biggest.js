@@ -5,15 +5,13 @@ if (process.argv.length <= 3) {
   console.log(0);
 } else {
   const ints = [];
-  const len = process.argv.length - 2;
   for (let i = 2; i < process.argv.length; i++) {
     ints.push(parseInt(process.argv[i]));
   }
 
-  /* Sort the array in descending order */
+  // Sort the array in descending order
   ints.sort((a, b) => b - a);
 
-  /* Print the second element which is the second largest */
-  console.log(ints.sort()[len - 2]);
+  // Print the second element which is the second largest
+  console.log(ints[1]);
 }
-
