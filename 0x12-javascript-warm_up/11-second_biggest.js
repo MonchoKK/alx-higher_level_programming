@@ -9,10 +9,10 @@ if (process.argv.length <= 3) {
     ints.push(parseInt(process.argv[i]));
   }
 
-  // Sort the array in descending order
+  /* Sort the array in descending order */
   ints.sort((a, b) => b - a);
 
-  // Print the second element which is the second largest
+  /* Print the second element which is the second largest */
   console.log(ints[1]);
 }
 
