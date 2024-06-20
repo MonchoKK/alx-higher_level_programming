@@ -5,6 +5,7 @@ if (process.argv.length <= 3) {
   console.log(0);
 } else {
   const ints = [];
+  const len = process.argv.length - 2;
   for (let i = 2; i < process.argv.length; i++) {
     ints.push(parseInt(process.argv[i]));
   }
@@ -13,6 +14,6 @@ if (process.argv.length <= 3) {
   ints.sort((a, b) => b - a);
 
   /* Print the second element which is the second largest */
-  console.log(ints[1]);
+  console.log(ints.sort()[len - 2]);
 }
 
