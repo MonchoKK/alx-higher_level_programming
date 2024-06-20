@@ -7,7 +7,7 @@ if (process.argv.length <= 3) {
   const ints = [];
   const len = process.argv.length - 2;
   for (let i = 2; i < process.argv.length; i++) {
-    ints.push(process.argv[i]);
+    ints.push(parseInt(process.argv[i]));
   }
   console.log(ints.sort()[len - 2]);
 }
