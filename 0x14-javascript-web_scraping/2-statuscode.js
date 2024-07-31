@@ -4,10 +4,13 @@
 
 const request = require('request');
 if (process.argv.length > 2) {
-  request
-    .get(process.argv[2])
-    .on('response', function (response) {
-      console.log('code: ', response.statusCode);
+  request.get(process.argv[2], function (error, response) {
+    if (!error) {
+      console.log('code:', response.statusCode);
+    } else {
+      console.error('Error:', error);
     }
-    );
+  });
+} else {
+  console.log('Usage: ./script.js <URL>');
 }
